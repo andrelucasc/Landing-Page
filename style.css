@@ -7,9 +7,11 @@
     overflow-x: hidden;
 }
 
+
 .first-section {
     width: 100%;
-    height: 700px;
+    min-height: 100vh;
+    height: 100%;
     display: block;
     position: relative;
     background: url(assets/img/main-bg.jpg);
@@ -22,10 +24,35 @@
 header {
     border: 1px solid red;
     display: flex;
-    width: 80%;
+    position: fixed;
+    opacity: 0;
+    transition: opacity .5s;
+    z-index: 1;
+    width: 79%;
     height: 70px;
+    left: 0;
+    right: 16px;
     margin-left: auto; 
     margin-right: auto;
+    background-color: rgb(255, 217, 0);
+}
+
+.rolling {
+    opacity: 1;
+}
+
+.logospace {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+    border: 1px solid purple;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 ul {
@@ -49,7 +76,7 @@ li {
     display: grid;
     position: relative;
     justify-content: center;
-    margin: 0 auto;
+    margin: 6% auto;
 }
 
 .box {
@@ -106,7 +133,8 @@ button {
 .second-section {
     border: 2px solid red;
     width: 100%;
-    height: 700px;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     margin: 0 auto;
 }
@@ -114,7 +142,8 @@ button {
 .third-section {
     border: 2px solid red;
     width: 100%;
-    height: 700px;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     margin: 0 auto;
 }
@@ -122,7 +151,8 @@ button {
 .fourth-section {
     border: 2px solid red;
     width: 100%;
-    height: 700px;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     margin: 0 auto;
 }
