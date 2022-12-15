@@ -1,13 +1,14 @@
+const body = document.querySelector('body')
 const header = document.querySelector('header')
 
 function changeHeaderOnScroll() {
-  if (window.scrollY >= 100) {
+  if (body.scrollTop > 0) {
     header.classList.add('rolling')
   } else {
     header.classList.remove('rolling')
   }
 }
 
-window.addEventListener('scroll', () => {
+body.addEventListener('scroll', () => {
   changeHeaderOnScroll()
 })
